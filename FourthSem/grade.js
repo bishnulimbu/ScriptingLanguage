@@ -1,4 +1,5 @@
 let percent = prompt("enter you percentage");
+percent = parseFloat(percent);
 
 if(percent >= 90){
     console.log("A+ Grade");
