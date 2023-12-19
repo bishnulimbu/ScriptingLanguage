@@ -21,6 +21,7 @@
   
 //   const primeNumbers = range(1, 100);
 //   console.log("Prime numbers between 1 and 100:", primeNumbers);
+//   wow
 function isPrime(num){
   if(num<=1){
     return false;
