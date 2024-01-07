@@ -7,3 +7,4 @@ const array2 = [
 console.log(array1.length);
 console.log(array1.sort());
 console.log(array2.sort());
+console.log(array2[array2.length-1]);
