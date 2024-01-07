@@ -8,3 +8,4 @@ console.log(apps);
 
 const cars = new Array('car1', 'car2', 'car3', 'car4');
 console.log(cars);
+console.log(typeof cars);
