@@ -1,4 +1,4 @@
-const heading = document.queryselector('buttonheading');
+const heading = document.queryselector('buttonHeading');
 const button = document.querySelector('#button1')
 
 
