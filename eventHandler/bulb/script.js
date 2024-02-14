@@ -1,20 +1,12 @@
-// const  = document.querySelector('#switch');
-
-
-const bulbswitch = document.querySelector('#bulbswitch');
+const toggle = document.querySelector('#toggle');
 const bulb = document.querySelector('#bulb');
 
-toggle.addEventListener(click, function(event) {
-  // toggle.classList.add('bulb-on');
-
-  console.log(bulb.src);
-  if (toggle.src.match('off')) {
+toggle.addEventListener('click', function(event) {
+  if (bulb.src.match('bulboff')) {
     bulb.src = './bulbon.png';
-    button.innerHTML = 'turn off';
+    toggle.innerHTML = 'Turn Off';
   } else {
     bulb.src = './bulboff.png';
-    button.innerHTML = 'turn on';
+    toggle.innerHTML = 'Turn On';
   }
-
-
-})
+});

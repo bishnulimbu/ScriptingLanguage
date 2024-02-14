@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bulb {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: background-color 0.5s;
+}
+
+.bulb-on {
+  box-shadow: 0 0 20px 20px yellow;
+}
+
+.bulb-off {
+  background-color: #333;
+}
