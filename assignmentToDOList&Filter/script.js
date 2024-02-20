@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-// Dynamic Content Filtering
 document.addEventListener("DOMContentLoaded", function() {
   const filterSelect = document.getElementById("filterSelect");
   const filteredItems = document.getElementById("filteredItems");
@@ -42,18 +41,12 @@ document.addEventListener("DOMContentLoaded", function() {
     displayItems(itemsToDisplay);
   });
 
-  // Mock functions for filtering and displaying items
   function getFilteredItems(category) {
-    // Logic to filter items based on category
-    // Returns an array of filtered items
-    // Example: return items.filter(item => item.category === category);
-    return ["Item 1", "Item 2", "Item 3"]; // Placeholder for demonstration
+    return ["Item 1", "Item 2", "Item 3"];
   }
 
   function displayItems(items) {
-    // Clear previous items
     filteredItems.innerHTML = "";
-    // Display filtered items
     items.forEach(item => {
       const p = document.createElement("p");
       p.textContent = item;
