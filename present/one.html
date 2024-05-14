@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .centered-div {
+    padding-top: 30vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="centered-div">
+    <button id="btn">Get Data</button>
+    <div id="data"></div>
+      <br/>
+    <img src="./one.jpg" alt="" style="width: 200px; height: 150px;">
+
+    </div>
+    <script>
+const btn = document.getElementById("btn");
+const dataDiv = document.getElementById("data");
+
+btn.addEventListener("click", function() {
+  const data = new XMLHttpRequest();
+  data.open("GET", "data.txt", true);
+
+  data.onload = function() {
+    if (data.status === 200) {
+      dataDiv.innerHTML = data.responseText;
+    } else {
+      dataDiv.innerHTML = "Error: " + data.statusText;
+    }
+  };
+
+  data.send();
+});
+
+</script>
+
+  </body>
+</html>
